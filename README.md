@@ -1,5 +1,6 @@
 ## Test server for Apollo GraphQL
 # https://apolloclient.herokuapp.com/graphql
+# For graphQL webserver https://apolloclient.herokuapp.com/graphiql
 # Avalible two querys:
 ```books```
 <br />
