@@ -7,7 +7,8 @@ const systemStatsSchema = [
   },
   {
     data: systemStatus.loadLast,
-    stats: "Last cpu load"
+    stats: "Last cpu load",
+    aditionalInfo: "test111"
   },
   {
     data: systemStatus.loadFiveMinutes,
@@ -19,7 +20,8 @@ const systemStatsSchema = [
   },
   {
     data: systemStatus.cpus,
-    stats: "Total cpus"
+    stats: "Total cpus",
+    aditionalInfo: "test333"
   }
 ];
 
