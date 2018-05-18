@@ -1,6 +1,6 @@
 ## Test server for Apollo GraphQL
 # https://apolloclient.herokuapp.com/graphql
-# Avalible two querys : books and systemStats.
+# Avalible two querys:
 ```books```
 <br />
 Just array with parameters: 
