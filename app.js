@@ -4,6 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const bodyParser = require("body-parser");
+const { graphqlExpress, graphiqlExpress } = require("apollo-server-express");
 
 var indexRouter = require("./routes/index");
 const graphql = require("./routes/graphql");
@@ -23,6 +24,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/graphql", graphql);
 app.use("/", indexRouter);
+
+// GraphiQL, a visual editor for queries
+app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
