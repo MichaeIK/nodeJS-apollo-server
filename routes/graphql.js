@@ -47,6 +47,7 @@ const schema = makeExecutableSchema({
 router.all(
   "/",
   graphqlExpress(req => {
+    console.log('knok knok')
     return {
       schema
     };
