@@ -5,11 +5,15 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const bodyParser = require("body-parser");
 const { graphqlExpress, graphiqlExpress } = require("apollo-server-express");
+const cors = require("cors");
 
 var indexRouter = require("./routes/index");
 const graphql = require("./routes/graphql");
 
 var app = express();
+
+//CORS ->
+app.use(cors());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
